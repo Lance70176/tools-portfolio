@@ -141,11 +141,18 @@
             padding: 30px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            position: relative;
         }
         
         .tool-card:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+        }
+        
+        .tool-card .tool-content {
+            flex: 1;
         }
         
         .tool-icon {
@@ -201,6 +208,8 @@
             border-radius: 25px;
             font-weight: 600;
             transition: opacity 0.3s ease;
+            align-self: flex-start;
+            margin-top: auto;
         }
         
         .tool-link:hover {
@@ -326,34 +335,38 @@
             <!-- JSON 格式化工具 -->
             <div class="tool-card">
                 <div class="tool-icon" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">📝</div>
-                <h2>JSON 格式化工具</h2>
-                <p class="description">
-                    線上 JSON 格式化、驗證與修復工具，自動處理中文亂碼，支援記錄儲存。
-                </p>
-                <ul class="features">
-                    <li>JSON 格式化與排版</li>
-                    <li>自動修復中文亂碼</li>
-                    <li>鍵名排序功能</li>
-                    <li>語法高亮顯示</li>
-                    <li>自動儲存記錄</li>
-                </ul>
+                <div class="tool-content">
+                    <h2>JSON 格式化工具</h2>
+                    <p class="description">
+                        線上 JSON 格式化、驗證與修復工具，自動處理中文亂碼，支援記錄儲存。
+                    </p>
+                    <ul class="features">
+                        <li>JSON 格式化與排版</li>
+                        <li>自動修復中文亂碼</li>
+                        <li>鍵名排序功能</li>
+                        <li>語法高亮顯示</li>
+                        <li>自動儲存記錄</li>
+                    </ul>
+                </div>
                 <a href="https://lance70176.github.io/json-formatter/" class="tool-link" target="_blank">立即使用 →</a>
             </div>
             
             <!-- 跨域測試工具 -->
             <div class="tool-card">
                 <div class="tool-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">🌐</div>
-                <h2>跨域測試工具</h2>
-                <p class="description">
-                    CORS Test Tool - 快速測試跨域請求是否成功，支援多種 HTTP 方法。
-                </p>
-                <ul class="features">
-                    <li>支援 GET/POST/PUT/DELETE</li>
-                    <li>即時測試與結果顯示</li>
-                    <li>明確區分 CORS 錯誤類型</li>
-                    <li>詳細回應資訊與耗時</li>
-                    <li>測試歷史記錄</li>
-                </ul>
+                <div class="tool-content">
+                    <h2>跨域測試工具</h2>
+                    <p class="description">
+                        CORS Test Tool - 快速測試跨域請求是否成功，支援多種 HTTP 方法。
+                    </p>
+                    <ul class="features">
+                        <li>支援 GET/POST/PUT/DELETE</li>
+                        <li>即時測試與結果顯示</li>
+                        <li>明確區分 CORS 錯誤類型</li>
+                        <li>詳細回應資訊與耗時</li>
+                        <li>測試歷史記錄</li>
+                    </ul>
+                </div>
                 <a href="https://lance70176.github.io/cors-test-tool/" class="tool-link" target="_blank">立即使用 →</a>
             </div>
             
