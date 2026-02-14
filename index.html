@@ -109,18 +109,22 @@
         
         .tools-grid.list-view .tool-content {
             flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
         }
         
         .tools-grid.list-view .tool-card h2 {
-            margin-bottom: 5px;
-            font-size: 1.3em;
+            margin-bottom: 0;
+            font-size: 1.1em;
         }
         
         .tools-grid.list-view .description {
             margin-bottom: 0;
-            font-size: 0.95em;
+            font-size: 0.85em;
+            color: #777;
             display: -webkit-box;
-            -webkit-line-clamp: 2;
+            -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -131,8 +135,11 @@
         
         .tools-grid.list-view .tool-link {
             margin-left: auto;
+            margin-top: 0;
             white-space: nowrap;
-            padding: 10px 25px;
+            padding: 8px 20px;
+            font-size: 14px;
+            align-self: center;
         }
         
         .tool-card {
@@ -280,6 +287,60 @@
             
             .tool-card {
                 padding: 15px;
+            }
+            
+            /* 小螢幕列表模式 */
+            .tools-grid.list-view .tool-card {
+                padding: 12px;
+                gap: 10px;
+            }
+            
+            .tools-grid.list-view .tool-icon {
+                width: 36px;
+                height: 36px;
+                min-width: 36px;
+                font-size: 18px;
+            }
+            
+            .tools-grid.list-view .tool-card h2 {
+                font-size: 0.95em;
+            }
+            
+            .tools-grid.list-view .description {
+                font-size: 0.75em;
+            }
+            
+            .tools-grid.list-view .tool-link {
+                padding: 5px 12px;
+                font-size: 12px;
+            }
+        }
+        
+        /* 手機版列表模式 */
+        @media (max-width: 768px) {
+            .tools-grid.list-view .tool-card {
+                padding: 15px;
+                gap: 12px;
+            }
+            
+            .tools-grid.list-view .tool-icon {
+                width: 40px;
+                height: 40px;
+                min-width: 40px;
+                font-size: 20px;
+            }
+            
+            .tools-grid.list-view .tool-card h2 {
+                font-size: 1em;
+            }
+            
+            .tools-grid.list-view .description {
+                font-size: 0.8em;
+            }
+            
+            .tools-grid.list-view .tool-link {
+                padding: 6px 15px;
+                font-size: 13px;
             }
         }
     </style>
