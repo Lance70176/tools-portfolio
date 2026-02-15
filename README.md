@@ -1,32 +1,25 @@
-# Rex 的工具箱
+# Rex Tools Portfolio
 
-📦 個人靜態網站工具清單
+🛠️ Rex 的工具箱 - 線上工具集合入口
 
-## 🌐 網站網址
-https://lance70176.github.io/tools-portfolio/
+🌐 **網址**: https://rextools.vercel.app
 
-## 🛠️ 工具清單
+## 工具列表
 
-### 1. Google Authenticator QR Code 生成器
-🔐 [立即使用](https://lance70176.github.io/gen_google_secret_key/)
+| 工具 | 網址 | 說明 |
+|------|------|------|
+| 🔐 Google Authenticator QR | https://lance70176.github.io/gen_google_secret_key/ | 雙重驗證碼生成 |
+| 📝 JSON 格式化 | https://json-formatter-sigma.vercel.app | JSON 格式化與驗證 |
+| 🌐 CORS 測試 | https://cors-test-tool.vercel.app | 跨域請求測試 |
+| 🔌 WebSocket 測試 | https://websocket-test-tool.vercel.app | WebSocket 連線測試 |
+| 🌍 IP 檢測 | https://ip-checker.vercel.app | IP 位址與位置檢測 |
 
-**功能說明：**
-- 生成標準 TOTP 雙重驗證 QR Code
-- 自動生成隨機 Secret Key
-- 支援自訂發行者（Issuer）與用戶名
-- 可掃描或手動輸入 Secret Key
-- 純前端實現，所有資料都在本地端處理，確保安全性
+## 技術
 
-**使用場景：**
-- 為網站或應用程式啟用 2FA 雙重驗證
-- 生成 Google Authenticator 相容的驗證碼
-- 測試 TOTP 實現
+- 純 HTML/CSS/JS
+- 部署於 Vercel + GitHub Pages
+- 響應式設計（支援手機/桌機）
 
-## 🚀 部署方式
-使用 GitHub Pages 免費部署靜態網站
+## 更新日誌
 
-## 📝 更新日誌
-- 2025-02-14: 初版上線，收錄 Google Authenticator QR Code 生成器
-
-## 📧 聯絡
-如有問題或建議，歡迎提出 Issue
+- 2026-02-15: 遷移到 Vercel
