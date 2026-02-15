@@ -8,7 +8,7 @@
 
 | 工具 | 網址 | 說明 |
 |------|------|------|
-| 🔐 Google Authenticator QR | https://lance70176.github.io/gen_google_secret_key/ | 雙重驗證碼生成 |
+| 🔐 Google Authenticator QR | https://rex-google-auth.vercel.app | 雙重驗證碼生成 |
 | 📝 JSON 格式化 | https://json-formatter-sigma.vercel.app | JSON 格式化與驗證 |
 | 🌐 CORS 測試 | https://cors-test-tool.vercel.app | 跨域請求測試 |
 | 🔌 WebSocket 測試 | https://websocket-test-tool.vercel.app | WebSocket 連線測試 |
